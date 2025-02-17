@@ -1,0 +1,269 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: #1e1e2f;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin-left: 1rem;
+}
+
+nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.btn {
+  background: #007BFF;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* About Section */
+.about {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #2a2a40;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+/* Tech Showcase Section */
+.tech-showcase {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #1e1e2f;
+}
+
+.tech-showcase h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  background: #3a3a5a;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item figcaption {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #ddd;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: #1a1a2e;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer .social-links a {
+  color: #fff;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+/* ====================== FEATURES PAGE IMPROVEMENTS ====================== */
+.features {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.features p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.feature {
+  background: #222436;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.feature i {
+  font-size: 3rem;
+  color: #007BFF;
+  margin-bottom: 1rem;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* ====================== TIMELINE PAGE IMPROVEMENTS ====================== */
+.timeline {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.timeline h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.timeline p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+.timeline-container {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.timeline-item {
+  background: #2a2d42;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.timeline-item:hover {
+  transform: scale(1.02);
+}
+
+.timeline-item h3 {
+  font-size: 1.4rem;
+  color: #007BFF;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
